@@ -38,7 +38,7 @@ jobs:
       # Step 4: Run tests with pytest
       # This is the "CI" part. If tests fail, the pipeline stops.
       - name: Run tests
-        run: pytest
+        run: python -m pytest
 
       # Step 5: Log in to Docker Hub
       # This step only runs on a push to the main branch, not on pull requests
